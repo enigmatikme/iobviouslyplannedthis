@@ -1,26 +1,33 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
-// var items = require('../database-mysql');
-// var items = require('../database-mongo');
+var db = require('../database-mongo/index.js');
+// const key = require('../config/google.js')
 
 var app = express();
 
-// UNCOMMENT FOR REACT
-// app.use(express.static(__dirname + '/../react-client/dist'));
+app.use(express.static(__dirname + '/../react-client/dist'));
+app.use(bodyParser.json());
 
-// UNCOMMENT FOR ANGULAR
-// app.use(express.static(__dirname + '/../angular-client'));
-// app.use(express.static(__dirname + '/../node_modules'));
-
-app.get('/items', function (req, res) {
-  items.selectAll(function(err, data) {
+app.get('/savedLikes', function (req, res) {
+  db.selectAll(function(err, data) {
     if(err) {
       res.sendStatus(500);
     } else {
-      res.json(data);
+      res.sendStatus(200).send(data);
     }
   });
+});
+
+app.post('/savedLikes', function(req, res) {
+  console.log("req.body is", req.body);
+  db.updateLikedRestaurant(req.body, (err, result) => {
+    if (err) {
+      res.sendStatus(400).send();
+    } else {
+      console.log("post request success", result);
+      res.sendStatus(200).send()
+    }
+  })
 });
 
 app.listen(3000, function() {

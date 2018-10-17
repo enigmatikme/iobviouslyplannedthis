@@ -1,0 +1,82 @@
+.booking {
+    /* display: grid; */
+    justify-content: right;
+    position: sticky;
+    margin-right: 100px;
+}
+
+.welcomeTitle {
+    /* display: grid; */
+    justify-content: center;
+    position: sticky;
+}
+
+.restaurantContainerTitle {
+        /* display: grid; */
+        justify-content: left;
+        background-color: white;
+        width: 60%;
+        margin-left: 100px;
+        border-radius: 10px;
+}
+
+.restaurantContainer {
+    display: flex;
+    /* margin: -20px; */
+    padding: 20px;
+}
+
+.restaurantInfo {
+    /* display: flex; */
+    padding: 20px;
+}
+
+.restaurantName {
+    color: black;
+    font: 36px/44px 'Calibre-Medium';
+    letter-spacing: .086em;
+    text-transform: uppercase;
+    padding: 10px
+}
+
+.restaurantRating {
+    margin: 10px;
+    border-right: 1px #d0d2d3 solid;
+    font-size: 28px; 
+    width: 50px;
+    color: #656666;
+    padding: 20px;
+}
+
+.restaurantPriceLevel {
+    margin: 10px;
+    border-right: 1px #d0d2d3 solid;
+    font-size: 28px;
+    width: 50px;
+    color: #656666;
+    padding: 20px;
+}
+
+.ratingTitle {
+    font-size: 15px;
+    /* padding: 20px; */
+}
+
+.priceTitle {
+    font-size: 15px;
+}
+
+h1 {
+    font: 36px/44px 'Calibre-Medium';
+    letter-spacing: .086em;
+    text-transform: uppercase;
+}
+
+.address {
+    margin: -20px;
+    padding: 10px;
+}
+
+.formattedRating {
+    display: flex; 
+}

@@ -1,0 +1,32 @@
+
+.title {
+    color: black;
+}
+.headerContainer {
+   
+}
+.container {
+    /* background-color: ]\; */
+    display: center;
+}
+
+/* .searchBox {
+
+} */
+.searchBtnContainer {
+    /* background-color: blue */
+    display: grid;
+    justify-content: center;
+}
+
+.queryContainer {
+    border-color: brown;
+    display: grid;
+    justify-content: center;
+}
+
+.button {
+    background-color: white;
+    justify-content: center;
+    margin: auto;
+}
