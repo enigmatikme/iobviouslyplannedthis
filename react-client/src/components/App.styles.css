@@ -20,3 +20,17 @@ body {
     height: 400px;
     border-radius: 75px;
   }
+
+
+  /* {
+    axios.get(`http://opentable.herokuapp.com/api/restaurants?name=${this.openTableLink(randomRestaurant.name)}`)
+    .then(function (response) {
+        console.log(response.data.restaurants[0].id);
+        var rID = response.data.restaurants[0].id
+        this.handleLink(rID)
+        
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+} */
