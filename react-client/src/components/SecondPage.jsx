@@ -99,7 +99,6 @@ export default class SecondPage extends React.Component {
                 <Restaurants list={this.state.nearbyRestaurants}/> 
                 </div>
             );
-            
         }
         return null;
     }
