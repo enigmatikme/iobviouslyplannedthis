@@ -1,33 +1,28 @@
 .booking {
-    /* display: grid; */
     justify-content: right;
     position: sticky;
     margin-right: 100px;
 }
 
 .welcomeTitle {
-    /* display: grid; */
     justify-content: center;
     position: sticky;
 }
 
 .restaurantContainerTitle {
-        /* display: grid; */
-        justify-content: left;
-        background-color: white;
-        width: 60%;
-        margin-left: 100px;
-        border-radius: 10px;
+    justify-content: left;
+    background-color: white;
+    width: 60%;
+    margin-left: 100px;
+    border-radius: 10px;
 }
 
 .restaurantContainer {
     display: flex;
-    /* margin: -20px; */
     padding: 20px;
 }
 
 .restaurantInfo {
-    /* display: flex; */
     padding: 20px;
 }
 
@@ -59,7 +54,6 @@
 
 .ratingTitle {
     font-size: 15px;
-    /* padding: 20px; */
 }
 
 .priceTitle {
