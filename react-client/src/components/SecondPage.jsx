@@ -96,7 +96,7 @@ export default class SecondPage extends React.Component {
         if (this.state.nearbyRestaurants.length !== 0) {
             return (
                 <div className={styles.restaurantContainer}> 
-                <Restaurants list={this.state.nearbyRestaurants}/> 
+                    <Restaurants list={this.state.nearbyRestaurants}/> 
                 </div>
             );
         }

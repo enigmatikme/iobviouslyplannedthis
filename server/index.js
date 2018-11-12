@@ -1,11 +1,11 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var db = require('../database-mongo/index.js');
-// const key = require('../config/google.js')
 
 var app = express();
 
-app.use(express.static(__dirname + '/../react-client/dist'));
+app.use(express.static(__dirname + '/../react-client/public'));
+app.use('/dist', express.static(__dirname + '/../react-client/dist'));
 app.use(bodyParser.json());
 
 app.get('/savedLikes', function (req, res) {
