@@ -35,7 +35,8 @@ class Search extends React.Component {
   handleSelectSuggest (geocodedPrediction, originalPrediction) {
     console.log("this is geocoded", geocodedPrediction, "original prediction", originalPrediction)
     this.setState({search: "", value: geocodedPrediction.formatted_address}, () => {
-      this.handleSubmit(geocodedPrediction.geometry.viewport.b.b, geocodedPrediction.geometry.viewport.f.b, geocodedPrediction.place_id);
+      console.log("checking geocode b", geocodedPrediction.geometry.viewport.j.j)
+      this.handleSubmit(geocodedPrediction.geometry.viewport.j.j, geocodedPrediction.geometry.viewport.l.j, geocodedPrediction.place_id);
     });
   }
   
